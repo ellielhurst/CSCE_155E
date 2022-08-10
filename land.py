@@ -35,7 +35,7 @@ def print_array():
 
 def gen_land(tl, tr, bl, br):
 
-
+    #hi
 
     middle_x = (tl[0] + tr[0])/2 #middle point bt top left and top right
     middle_y = (tr[1] + br[1])/2 #middle point bt tr and br
