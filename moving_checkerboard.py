@@ -3,8 +3,8 @@ import tkinter as tk
 import time
 
 root = tk.Tk()
-Frame_Width = 800
-Frame_Height = 800
+Frame_Width = 500
+Frame_Height = 500
 root.geometry(f'{Frame_Width}x{Frame_Height}')
 canvas = tk.Canvas(root)
 canvas.pack()
@@ -37,6 +37,13 @@ while True:
                 color = "white"
             else:
                 color = "black"
+
+      
+            if not x1 <  Frame_Width:
+                moving_x = -moving_x
+        
+            if not y1 <  Frame_Height:
+                moving_x = -moving_x
 
             # canvas.update() ((shows the array being created))
             # time.sleep(.01)
